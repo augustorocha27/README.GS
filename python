@@ -1,0 +1,33 @@
+def verificar_temperatura(temperatura):
+    #Define a função chamada verificar_temperatura que recebe um argumento temperatura.
+    #Esta função será responsável por verificar se a temperatura está dentro do intervalo desejado e imprimir uma mensagem correspondente.
+    problemas_ambientais = {
+    #Cria um dicionário chamado problemas_ambientais, onde as chaves são os possíveis problemas ambientais e os valores são descrições desses problemas.
+        "baixa temperatura": "devido a correntes frias ou derretimento de geleiras.",
+        "alta temperatura": "devido a mudanças climáticas ou eventos climáticos extremos."
+    }
+
+    if temperatura > 29:
+        # Verifica se a temperatura é maior que 29 graus.
+        print("A temperatura está muito alta,", problemas_ambientais["alta temperatura"])
+    elif temperatura < 16:
+        #Se a condição anterior não for verdadeira, verifica se a temperatura é menor que 16 graus.
+        print("A temperatura está muito baixa,", problemas_ambientais["baixa temperatura"])
+    else:
+        #Se nenhuma das condições anteriores for verdadeira (ou seja, se a temperatura estiver entre 16 e 29 graus).
+        print("A temperatura está OK.")
+
+def main():
+    #Define uma função chamada main(), que é a função principal do programa.
+    try:
+    #Inicia um bloco de código onde podem ocorrer erros.
+        temperatura = float(input("Digite a temperatura em graus Celsius: "))
+        verificar_temperatura(temperatura)
+    except ValueError:
+    #Captura exceções do tipo ValueError, que ocorrem quando a entrada do usuário não pode ser convertida em um número.
+        print("Por favor, insira um número válido.")
+
+#Verifica se o script está sendo executado diretamente como o programa principal.
+if __name__ == "__main__":
+#Chama a função main() se o script estiver sendo executado como o programa principal. Isso inicia a execução do programa.
+    main()

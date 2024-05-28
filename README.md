@@ -20,11 +20,17 @@ try = inicia um bloco de código onde ocorrerá erros.
 
 excpet ValueError = captura exceções do tipo ValueError, que ocorre quando a entrada do usuário não pode ser convertida em um número.
 
+float(input) = para que possar ser inserido um valor numérico.
+
 
 ## Integrantes do grupo 
 
 Augusto Rocha – RM556316
+
+
 Nicolas Lorenzo – RM557962
+
+
 Rafael Menezes Viana – RM558287
 
 
